@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    int num, yes=0, no=0;
+    
+for(int i=1;i<11;i++){   
+ Scanner entrada = new Scanner(System.in);
+  System.out.println("Digite um valor: ");
+  num = entrada.nextInt();
+  
+    if(num>=10&&num<=20){
+      yes = yes+1 ;
+        }else{
+      no = no+1 ;
+      //coloquei "+1" porque o "++" não tava funcionando 
+    }
+    }
+    System.out.println("Números dentro do intervalo entre (10;20): "+yes);
+  System.out.println("Fora do intervalo: "+no);
+  }
+}
+
+
+     
