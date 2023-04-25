@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    int num, par=0, impar=0;
+    
+for(int i=1;i<5;i++){   
+  Scanner entrada = new Scanner(System.in);
+    System.out.println("Digite um valor: ");
+    num = entrada.nextInt();
+  
+    if(num%2==0){
+      par = par+1 ;
+        }else{
+      impar = impar+1 ;
+      //coloquei "+1" porque o "++" não tava funcionando 
+    }
+    }
+    System.out.println("Quantidade de números pares: "+par);
+    System.out.println("Quantidade de números ímpares: "+impar);
+  }
+}
+
+
+     
