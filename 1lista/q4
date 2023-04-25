@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    int id, soma=0, med, qtd;
+    
+ Scanner entrada = new Scanner(System.in);
+    System.out.println("Digite quantas idades você irá inserir:  ");
+    qtd = entrada.nextInt();
+  
+    for(int i=0;i<qtd;i++){
+      Scanner ler = new Scanner(System.in);
+      System.out.println("Informe uma idade: ");
+      id = ler.nextInt();
+      soma = id + soma;
+    }  
+    med = soma/qtd;
+    System.out.println("média: "+med);
+   
+  }
+}
+     
