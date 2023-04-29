@@ -1,0 +1,29 @@
+
+/*
+Online Java - IDE, Code Editor, Compiler
+
+Online Java is a quick and easy tool that helps you to build, compile, test your programs online.
+*/
+
+/*13. Escreva um algoritmo que leia um número do teclado até que encontre um
+número menor ou igual a 1.*/
+
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args) {
+        int i, n;
+        
+        do{
+            
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Informe um número: ");
+        n = entrada.nextInt();
+        
+        }while(n>1);
+
+    }
+}
+
+
