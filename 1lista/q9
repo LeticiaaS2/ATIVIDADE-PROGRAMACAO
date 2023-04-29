@@ -1,0 +1,25 @@
+
+/*
+Online Java - IDE, Code Editor, Compiler
+
+Online Java is a quick and easy tool that helps you to build, compile, test your programs online.
+*/
+//9. Crie um programa para ler 3 notas e mostrar a média delas.
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args) {
+        int i=0, nota=0, soma=0, media;
+        
+        Scanner entrada = new Scanner(System.in);
+        while(i<3){
+            System.out.println("Informe a nota: ");
+            nota = entrada.nextInt();
+            soma = soma + nota;
+            i++;
+        }
+        media = soma/3;
+        System.out.println("Média: "+media);
+    }
+}
