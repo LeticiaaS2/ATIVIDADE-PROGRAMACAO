@@ -1,0 +1,30 @@
+
+/*
+Online Java - IDE, Code Editor, Compiler
+
+Online Java is a quick and easy tool that helps you to build, compile, test your programs online.
+*/
+/*11. Faça um programa que peça ao usuário um número entre 12 e 20. Se a 
+pessoa digitar um número diferente, mostrar a mensagem "entrada inválida" e
+solicitar o número novamente. Se digitar correto mostrar o número digitado.*/
+
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args) {
+        int n;
+        
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Informe um número entre 12 e 20: ");
+        n = entrada.nextInt();
+        
+        while(n<12||n>20){
+            System.out.println("Número inválido");
+            n++;
+            System.out.println("Informe um número entre 12 e 20: ");
+            n = entrada.nextInt();
+        }
+        System.out.println("Número digitado: "+n);
+    }
+}
