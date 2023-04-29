@@ -1,0 +1,25 @@
+
+/*
+Online Java - IDE, Code Editor, Compiler
+
+Online Java is a quick and easy tool that helps you to build, compile, test your programs online.
+*/
+//10. Faça um programa que mostre a tabuada de um número N (N será lido do teclado).
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args) {
+        int i=0, n, mult;
+        
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Informe um número: ");
+        n = entrada.nextInt();
+        
+        while(i<11){
+            mult = n*i;
+            System.out.println(n+" x "+i+" = " +mult);
+            i++;
+        }
+    }
+}
