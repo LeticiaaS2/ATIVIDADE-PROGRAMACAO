@@ -1,0 +1,31 @@
+
+/*
+Online Java - IDE, Code Editor, Compiler
+
+Online Java is a quick and easy tool that helps you to build, compile, test your programs online.
+*/
+
+/*14. Crie um programa que leia um número do teclado até que encontre um
+número igual a zero. No final, mostre a soma dos números digitados.*/
+
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args) {
+        int soma=0, n;
+        
+        do{
+            
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Informe um número: ");
+        n = entrada.nextInt();
+        soma = soma + n;
+        
+        }while(n>=1||n<0);
+        System.out.println("Soma: "+soma);
+
+    }
+}
+
+
